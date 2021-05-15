@@ -7,6 +7,7 @@ const shopRoutes = require('./routes/shop');
 
 app.use(express.urlencoded({extended: false}));
 
+// Adding route filters
 app.use('/admin',adminRoutes);
 app.use(shopRoutes);
 
